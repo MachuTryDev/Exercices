@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf');
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+h1,h2 {
+    font-family: 'Young Serif';
+    font-weight: 400;
+    line-height: 5rem;
+}
+
+h1{
+    color: hsl(24, 5%, 18%);
+    font-size: 34px;
+    margin-left: 3rem;
+}
+
+.recipe-container p{
+    line-height: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    text-align: justify;
+    font-size: 20px;
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+    margin-left: 3rem;
+}
+
+h3{
+    color: hsl(332, 51%, 32%);
+    line-height: 2rem;
+    margin-left: 3rem;
+    padding-bottom: 1rem;
+}
+
+li{
+    margin-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+}
+
+li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+table.nutrition-table{
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.nutrition-table tr{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid hsl(14, 27%, 67%);
+}
+
+td{
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+th,td{
+    padding: 10px;
+    text-align: justify;
+    
+}
+
+strong{
+    color:hsl(16, 29%, 35%);
+}
+
+@media (min-width: 900px) {
+
+    body {
+        background-color: hsl(30, 54%, 90%)
+    }
+
+    main {
+        background-color: hsl(0, 0%, 100%);
+        width: 80%;
+        border-radius: 25px;
+        margin: 5rem 0;
+    }
+
+    .main-container {
+        width: 115%;
+        margin-left: 2rem;
+    }
+
+    .img-container {
+        padding: 2rem 2rem 0;
+    }
+    
+    .img-container img {
+        border-radius: 15px;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    main {
+        background-color: hsl(0, 0%, 100%);
+        width: 45%;
+        border-radius: 15px;
+    }
+
+    .recipe-container {
+        width: 80%;
+    }
+}
